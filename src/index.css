@@ -1,0 +1,121 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  /* border: 1px solid red; */
+}
+nav {
+  margin: 1rem;
+  /* border: 1px solid green; */
+}
+
+nav > a {
+  margin-left: 1rem;
+}
+
+main {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  width: 50%;
+  background-color: hsl(216, 33%, 97%);
+  border-radius: 4px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form > div {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  width: 80%;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+form > div > input,
+.btn-container {
+  font-size: 18px;
+  width: 65%;
+  padding: 0.5rem 0.5rem;
+  margin-left: 0.5rem;
+  outline: none;
+}
+
+.btn-container {
+  height: fit-content;
+  padding: 0 0.5rem;
+}
+
+#btn {
+  width: 120px;
+  height: 1.8rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    width: 70%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form > div {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  form > div > label {
+    display: none;
+  }
+
+  form > div > input {
+    width: 90%;
+  }
+
+  form > div > button {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #btn {
+    width: 65%;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.5rem;
+  }
+}
